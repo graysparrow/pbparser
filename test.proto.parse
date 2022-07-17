@@ -1,0 +1,15 @@
+message-Person
+-field-optional-string-name
+-field-optional-int32-id
+-field-optional-string-email
+-enum-PhoneType
+-message-PhoneNumber
+--field-optional-string-number
+--field-optional-PhoneType-type
+--msgend
+-field-repeated-PhoneNumber-phones
+-field-optional-google.protobuf.Timestamp-last_updated
+-msgend
+message-AddressBook
+-field-repeated-Person-people
+-msgend
